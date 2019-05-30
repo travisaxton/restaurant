@@ -16,12 +16,26 @@
 			<hr />
 		</nav>
 		<main>
-			<div class="rest-photo-container">
-				<img src="images/axton-cafe.jpg" />
-			</div>
-			<h3>About Axton Cafe</h3> 			
-			<p>Whether you’re dining in the lively carriageway barroom, al fresco in the wisteria ensconced patio & garden, or in our warmly intimate dining room, the Axton Cafe menu features mediterranean inspired dishes centered on our wood burning hearth and rotisserie.</p>
-			<p>Additionally, chef Travis Axton and his team offer a sumptuous nightly multi-course tasting menu with optional wine pairings culled from our award-winning list of nearly 400 bottles.</p>
+			<form class="contact-form">
+				Name: <input type="text"><br>
+				Email: <input type="email"><br>
+				Phone: <input type="tel"><br>
+				Reason for inquiry: <select name="type">
+					<option value="catering">Catering</option>
+					<option value="private-party">Private Party</option>
+					<option value="feedback">Feedback</option>
+					<option value="other">Other</option>
+				</select><br>
+				Additional Information: <input type="textarea"><br>
+				Have you been to the restaurant? <input type="radio" name="answer" value="yes">Yes<br><input type="radio" name="answer" value="no">No<br>
+				Best days to contact you:<br>
+				<input type="checkbox" name="days-of-the-week" value="Monday" />M<br>
+				<input type="checkbox" name="days-of-the-week" value="Tuesday" />T<br>
+				<input type="checkbox" name="days-of-the-week" value="Wednesday" />W<br>
+				<input type="checkbox" name="days-of-the-week" value="Thursday" />Th<br>
+				<input type="checkbox" name="days-of-the-week" value="Friday" />F<br>
+				<input type="submit" value="Send Request">
+			</form>
 			<hr />
 		</main>
 		<footer>
