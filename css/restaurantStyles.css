@@ -1,0 +1,66 @@
+
+/***** HEADER STYLES *****/
+
+.main-title {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nav-list {
+	list-style-type: none;
+}
+
+.nav-list-item {
+	display: inline;
+	margin: 1em;
+}
+
+/***** LINK STYLING *****/
+a:link {
+	color: brown;
+}
+
+a:visited {
+ 	color: blue;
+}
+
+a:hover {
+  	font-weight: bold;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+
+/***** MAIN BODY STYLES *****/
+
+main {
+	background-color: #F0EAD6;
+} 
+
+
+/***** FOOTER STYLES *****/
+
+footer {
+	text-align: center;
+} 
+
+.footer-content {
+	margin: 1em;
+}
+
+
+.rest-content-container, 
+.rest-photo-container {
+	max-width: 400px;
+}
+
+.rest-content-container {
+	margin: 0 auto;
+}
+
+.rest-photo-container {
+	max-height: 150px;
+	overflow: hidden;
+}
