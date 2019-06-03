@@ -81,6 +81,26 @@ footer {
 	margin: 0 auto;
 }
 
-tr:nth-child(even) {
+.beverage-heading {
+	text-align: center;
+}
+
+tr:nth-child(odd) {
   background-color: white;
+}
+
+.contact-form,
+.menu {
+	padding: 2em;
+}
+
+header {
+	padding-bottom: 2em;
+}
+
+@media screen and (min-width: 768px) {
+	.contact-form {
+		width: 50%;
+		margin: 0 auto;
+	}
 }
