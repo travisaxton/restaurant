@@ -6,7 +6,8 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
-.nav-list {
+.nav-list,
+.menu-list {
 	list-style-type: none;
 }
 
@@ -40,6 +41,7 @@ a:active {
 }
 
 
+
 /***** MAIN BODY STYLES *****/
 
 main {
@@ -67,7 +69,18 @@ footer {
 	margin: 0 auto;
 }
 
-.rest-photo-container {
+.hero {
 	max-height: 150px;
-	overflow: hidden;
+	width: 400px;
+	object-fit: cover;
+}
+
+/***** TABLE STYLING *****/
+
+.beverages {
+	margin: 0 auto;
+}
+
+tr:nth-child(even) {
+  background-color: white;
 }
