@@ -16,7 +16,7 @@ function validateItems() {
     var email = document.forms["contactForm"]["email"].value;
     var phone = document.forms["contactForm"]["phone"].value;
     
-    if ( name == "" || typeof name !== 'string' ) {
+    if ( name == "" || !isNaN(name) ) {
         alert("Name must not be left blank and cannot be a number.");
         document.forms["contactForm"]["name"]
            .parentElement.className = "form-group has-error";
