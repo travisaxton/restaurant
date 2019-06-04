@@ -5,6 +5,27 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/restaurantStyles.css" >
+		<!-- Internal Style Sheet for Contact Form -->
+		<style>
+			.form-container {
+				padding: 2em;
+			}
+
+			header {
+				padding-bottom: 2em;
+			}
+
+			noscript {
+				margin: 0 auto;
+			}
+
+			@media screen and (min-width: 800px) {
+				.form-container {
+					width: 50%;
+					margin: 0 auto;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -18,63 +39,66 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<form class="contact-form">
-				<div class="form-group">
-					<label for="">Name</label>
-					<input type="text" class="form-control" required>
-				</div>
-				<div class="form-group">
-					<label for="">Email</label>
-					<input type="email" class="form-control" required>
-				</div>
-				<div class="form-group">
-					<label for="">Phone</label>
-					<input type="phone" class="form-control" required>
-				</div>
-				<div class="form-group">
-					<label for="">Reason for inquiry:</label>
-					<select name="type">
-						<option value="catering">Catering</option>
-						<option value="private-party">Private Party</option>
-						<option value="feedback">Feedback</option>
-						<option value="other">Other</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label for="">Additional Information:</label>
-					<input type="textarea">
-				</div>
-				<div class="form-group">Have you been to the restaurant?
-					<input type="radio" name="answer" value=" yes">
-					<label for="">Yes</label>
-					<input type="radio" name="answer" value=" no">
-					<label for="">No</label>
-				</div>
-				<div class="form-group">Best days to contact you:
-					<div class="form-check form-check-inline">
-						<input type="checkbox" class="form-check-input" name="days-of-the-week" value="monday"/>
-						<label for="" class="form-check-label">M</label>
+		<main class="form-container">
+			<noscript>This form will not function properly with JavaScript disabled!</noscript>
+			<div>
+				<form class="contact-form">
+					<div class="form-group">
+						<label for="">Name</label>
+						<input type="text" class="form-control" required>
 					</div>
-					<div class="form-check form-check-inline">
-						<input type="checkbox" class="form-check-input" name="days-of-the-week" value="tuesday"/>
-						<label for="" class="form-check-label">T</label>
+					<div class="form-group">
+						<label for="">Email</label>
+						<input type="email" class="form-control" required>
 					</div>
-					<div class="form-check form-check-inline">
-						<input type="checkbox" class="form-check-input" name="days-of-the-week" value="wednesday"/>
-						<label for="" class="form-check-label">W</label>
+					<div class="form-group">
+						<label for="">Phone</label>
+						<input type="phone" class="form-control" required>
 					</div>
-					<div class="form-check form-check-inline">
-						<input type="checkbox" class="form-check-input" name="days-of-the-week" value="thursday"/>
-						<label for="" class="form-check-label">Th</label>
+					<div class="form-group">
+						<label for="">Reason for inquiry:</label>
+						<select name="type">
+							<option value="catering">Catering</option>
+							<option value="private-party">Private Party</option>
+							<option value="feedback">Feedback</option>
+							<option value="other">Other</option>
+						</select>
 					</div>
-					<div class="form-check form-check-inline">
-						<input type="checkbox" class="form-check-input" name="days-of-the-week" value="friday"/>
-						<label for="" class="form-check-label">F</label>
-					</div>	
-				</div>
-				<button type="submit" class="btn btn-primary">Send Request</button>
-			</form>
+					<div class="form-group">
+						<label for="">Additional Information:</label>
+						<input type="textarea">
+					</div>
+					<div class="form-group">Have you been to the restaurant?
+						<input type="radio" name="answer" value=" yes">
+						<label for="">Yes</label>
+						<input type="radio" name="answer" value=" no">
+						<label for="">No</label>
+					</div>
+					<div class="form-group">Best days to contact you:
+						<div class="form-check form-check-inline">
+							<input type="checkbox" class="form-check-input" name="days-of-the-week" value="monday"/>
+							<label for="" class="form-check-label">M</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input type="checkbox" class="form-check-input" name="days-of-the-week" value="tuesday"/>
+							<label for="" class="form-check-label">T</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input type="checkbox" class="form-check-input" name="days-of-the-week" value="wednesday"/>
+							<label for="" class="form-check-label">W</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input type="checkbox" class="form-check-input" name="days-of-the-week" value="thursday"/>
+							<label for="" class="form-check-label">Th</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input type="checkbox" class="form-check-input" name="days-of-the-week" value="friday"/>
+							<label for="" class="form-check-label">F</label>
+						</div>	
+					</div>
+					<button type="submit" class="btn btn-primary">Send Request</button>
+				</form>
+			</div>
 			<hr />
 		</main>
 		<footer>
